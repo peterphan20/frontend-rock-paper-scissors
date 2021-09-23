@@ -8,18 +8,23 @@ import rock from "../assets/icon-rock.svg";
 
 const EasyModeButtons = () => {
 	return (
-		<div className="mt-52">
-			<div className="relative">
-				<Triangle />
-				<Button
-					src={paper}
-					className="-translate-y-20"
-					primaryColor="paper1"
-					secondaryColor="paper2"
-				/>
-				<Button src={scissor} />
-				<Button src={rock} />
-			</div>
+		<div className="mb-24">
+			<Triangle />
+			<Button
+				src={paper}
+				className="bg-gradient-to-b from-primary-paper to-secondary-paper shadow-outter-paper top-48 left-8"
+				label="easy mode paper icon"
+			/>
+			<Button
+				src={scissor}
+				className="bg-gradient-to-b from-primary-scissor to-secondary-scissor shadow-outter-scissor top-48 left-56"
+				label="easy mode scissor icon"
+			/>
+			<Button
+				src={rock}
+				className="bg-gradient-to-b from-primary-rock to-secondary-rock shadow-outter-rock top-96 left-32"
+				label="easy mode rock icon"
+			/>
 		</div>
 	);
 };

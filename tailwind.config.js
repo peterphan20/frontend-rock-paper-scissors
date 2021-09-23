@@ -24,6 +24,14 @@ module.exports = {
 				"score-text": "hsl(229, 64%, 46%)",
 				"header-outline": "hsl(217, 16%, 45%)",
 			},
+			boxShadow: {
+				"inner-button": "inset 0px 8px 0px 0px hsl(0, 0%, 80%)",
+				"outter-paper": "0px 7px 0px 0px hsl(230, 89%, 45%)",
+				"outter-scissor": "0px 7px 0px 0px hsl(40, 84%, 45%)",
+				"outter-rock": "0px 7px 0px 0px hsl(349, 70%, 45%)",
+				"outter-lizard": "0px 7px 0px 0px hsl(261, 72%, 45%)",
+				"outter-spock": "0px 7px 0px 0px hsl(189, 58%, 45%)",
+			},
 		},
 	},
 	variants: {

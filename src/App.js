@@ -1,10 +1,16 @@
-import React from "react";
+import { useState } from "react";
+import AdvanceMode from "./pages/AdvanceMode";
 import EasyMode from "./pages/EasyMode";
 
 const App = () => {
+	const [hardMode, setHardMode] = useState(false);
 	return (
-		<div className="font-body bg-gradient-to-b from-radial-gradient1 to-radial-gradient2 w-full h-full min-h-screen">
-			<EasyMode />
+		<div className="font-body font-semibold bg-gradient-to-b from-primary-radial-gradient to-secondary-radial-gradient w-full h-full min-h-screen">
+			{!hardMode ? (
+				<EasyMode hardMode={hardMode} setHardMode={setHardMode} />
+			) : (
+				<AdvanceMode hardMode={hardMode} setHardMode={setHardMode} />
+			)}
 		</div>
 	);
 };
