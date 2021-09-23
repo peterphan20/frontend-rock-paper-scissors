@@ -8,16 +8,16 @@ import rock from "../assets/icon-rock.svg";
 
 const EasyModeButtons = () => {
 	return (
-		<div className="mb-24">
+		<div className="mt-16 mb-20">
 			<Triangle />
 			<Button
 				src={paper}
-				className="bg-gradient-to-b from-primary-paper to-secondary-paper shadow-outter-paper top-48 left-8"
+				className="bg-gradient-to-b from-primary-paper to-secondary-paper shadow-outter-paper top-52 left-8"
 				label="easy mode paper icon"
 			/>
 			<Button
 				src={scissor}
-				className="bg-gradient-to-b from-primary-scissor to-secondary-scissor shadow-outter-scissor top-48 left-56"
+				className="bg-gradient-to-b from-primary-scissor to-secondary-scissor shadow-outter-scissor top-52 left-56"
 				label="easy mode scissor icon"
 			/>
 			<Button

@@ -3,7 +3,7 @@ import Score from "../molecules/Score";
 
 const Scoreboard = () => {
 	return (
-		<div className="mb-28 w-full h-full">
+		<div className="pb-5 w-full h-full">
 			<div className="flex justify-between items-center border-2 border-header-outline rounded-lg py-4 px-4">
 				<div className="flex flex-col justify-center items-start text-2xl text-gray-100 leading-none">
 					<h1>ROCK</h1>
