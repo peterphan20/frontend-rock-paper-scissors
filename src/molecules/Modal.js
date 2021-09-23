@@ -1,8 +1,10 @@
-import React from "react";
+import { useContext } from "react";
 import easyModeRules from "../assets/image-rules.svg";
 import advanceModeRules from "../assets/image-rules-bonus.svg";
+import { toggleHardModeContext } from "../context/GameModeProvider";
 
-const Modal = ({ modalHandler, hardMode }) => {
+const Modal = ({ modalHandler }) => {
+	const [hardMode] = useContext(toggleHardModeContext);
 	return (
 		<div
 			className="grid place-items-center fixed top-0 left-0 w-full h-full z-20"
