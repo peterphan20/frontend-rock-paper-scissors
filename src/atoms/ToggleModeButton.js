@@ -10,7 +10,7 @@ const ToggleModeButton = ({ hardMode, toggleHandler, text }) => {
 				}`}
 			>
 				<h1>{text}</h1>
-				{!hardMode ? <i class="fas fa-check"></i> : <i className="fas fa-times"></i>}
+				{!hardMode ? <i className="fas fa-check"></i> : <i className="fas fa-times"></i>}
 			</div>
 		</>
 	);

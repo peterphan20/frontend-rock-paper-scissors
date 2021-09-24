@@ -1,7 +1,6 @@
 import React from "react";
-import Score from "../molecules/Score";
 
-const Scoreboard = () => {
+const Scoreboard = ({ score }) => {
 	return (
 		<div className="pb-5 w-full h-full">
 			<div className="flex justify-between items-center border-2 border-header-outline rounded-lg py-4 px-4">
@@ -12,7 +11,7 @@ const Scoreboard = () => {
 				</div>
 				<div className="flex flex-col justify-center items-center bg-gray-100 text-dark-text rounded-lg py-2 px-6">
 					<h1 className="text-xs text-score-text tracking-widest">SCORE</h1>
-					<Score />
+					<h1 className="text-5xl">{score}</h1>
 				</div>
 			</div>
 		</div>
