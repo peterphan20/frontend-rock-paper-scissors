@@ -15,7 +15,7 @@ const EasyMode = () => {
 			<ToggleMode />
 			<EasyModeButtons score={score} setScore={setScore} />
 			<button
-				className="text-gray-100 text-sm border-2 border-header-outline rounded-xl py-2 px-10 tracking-widest"
+				className="text-gray-200 text-sm border-2 border-header-outline rounded-xl py-2 px-10 tracking-widest"
 				onClick={() => setShowEasyRules(true)}
 			>
 				RULES

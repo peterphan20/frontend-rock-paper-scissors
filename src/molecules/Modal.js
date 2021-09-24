@@ -12,7 +12,7 @@ const Modal = ({ modalHandler }) => {
 		>
 			<div
 				onClick={(e) => e.stopPropagation()}
-				className="relative flex flex-col justify-center items-center bg-gray-100 text-gray-900 w-full h-full z-20"
+				className="relative flex flex-col justify-center items-center bg-gray-200 text-gray-900 w-full h-full z-20"
 			>
 				<h1 className="text-3xl font-bold text-dark-text mb-8">RULES</h1>
 				<img
