@@ -1,9 +1,14 @@
-import React from "react";
+import { useContext } from "react";
+import { toggleHardModeContext } from "../context/GameModeProvider";
 
 const Button = ({ src, className = " ", clickHandler, label, dataValue }) => {
+	const [hardMode] = useContext(toggleHardModeContext);
+
 	return (
 		<div
-			className={`${className} flex justify-center items-center bg-gradient-to-b from-primary-${dataValue} to-secondary-${dataValue} shadow-outter-${dataValue} rounded-full w-28 h-28 z-10`}
+			className={`${className} flex justify-center items-center bg-gradient-to-b from-primary-${dataValue} to-secondary-${dataValue} shadow-outter-${dataValue} rounded-full ${
+				!hardMode ? "w-28 h-28 " : "w-24 h-24"
+			} z-10`}
 			onClick={clickHandler}
 			data-value={dataValue}
 		>

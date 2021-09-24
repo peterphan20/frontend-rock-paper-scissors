@@ -2,16 +2,18 @@ import { useState, useEffect } from "react";
 import MobileResultScreen from "../molecules/MobileResultScreen";
 import DesktopResultScreen from "../molecules/DesktopResultScreen";
 import Button from "../atoms/Button";
-import Triangle from "../atoms/Triangle";
+import Pentagon from "../atoms/Pentagon";
 
 import paper from "../assets/icon-paper.svg";
 import scissor from "../assets/icon-scissors.svg";
 import rock from "../assets/icon-rock.svg";
+import lizard from "../assets/icon-lizard.svg";
+import spock from "../assets/icon-spock.svg";
 
-import { easyModeChoices } from "../helper/computerChoice";
+import { advanceModeChoices } from "../helper/computerChoice";
 import { userWins, draw } from "../helper/scoring";
 
-const EasyModeButtons = ({ score, setScore }) => {
+const AdvanceModeButtons = ({ score, setScore }) => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 	const [usersChoice, setUsersChoice] = useState("");
 	const [computerChoice, setComputerChoice] = useState("");
@@ -47,11 +49,10 @@ const EasyModeButtons = ({ score, setScore }) => {
 			/>
 		);
 	};
-
 	const computerPlay = () => {
-		const idx = Math.floor(Math.random() * easyModeChoices.length);
-		setComputerChoice(easyModeChoices[idx]);
-		return easyModeChoices[idx];
+		const idx = Math.floor(Math.random() * advanceModeChoices.length);
+		setComputerChoice(advanceModeChoices[idx]);
+		return advanceModeChoices[idx];
 	};
 
 	const play = async (e) => {
@@ -61,6 +62,7 @@ const EasyModeButtons = ({ score, setScore }) => {
 	};
 
 	const scoring = (usersChoice, computerChoice) => {
+		console.log(usersChoice, computerChoice);
 		if (draw(usersChoice, computerChoice)) {
 			setScore(score);
 			setUserWinLose("DRAW");
@@ -85,28 +87,42 @@ const EasyModeButtons = ({ score, setScore }) => {
 	return (
 		<div>
 			{!gamePlayed ? (
-				<div className="mt-16 mb-20">
-					<Triangle />
-					<Button
-						src={paper}
-						className="absolute top-52 left-8"
-						dataValue="paper"
-						clickHandler={(e) => play(e)}
-						label="paper"
-					/>
+				<div className="mt-20 mb-20">
+					<Pentagon />
 					<Button
 						src={scissor}
-						className="absolute top-52 left-56"
+						className="absolute top-60 left-36"
 						dataValue="scissor"
 						clickHandler={(e) => play(e)}
 						label="scissor"
 					/>
 					<Button
+						src={paper}
+						className="absolute top-80 left-64"
+						dataValue="paper"
+						clickHandler={(e) => play(e)}
+						label="paper"
+					/>
+					<Button
 						src={rock}
-						className="absolute top-96 left-32"
+						className="absolute bottom-20 left-56"
 						dataValue="rock"
 						clickHandler={(e) => play(e)}
 						label="rock"
+					/>
+					<Button
+						src={lizard}
+						className="absolute bottom-20 left-16"
+						dataValue="lizard"
+						clickHandler={(e) => play(e)}
+						label="lizard"
+					/>
+					<Button
+						src={spock}
+						className="absolute top-80 left-8"
+						dataValue="spock"
+						clickHandler={(e) => play(e)}
+						label="spock"
 					/>
 				</div>
 			) : (
@@ -116,4 +132,4 @@ const EasyModeButtons = ({ score, setScore }) => {
 	);
 };
 
-export default EasyModeButtons;
+export default AdvanceModeButtons;

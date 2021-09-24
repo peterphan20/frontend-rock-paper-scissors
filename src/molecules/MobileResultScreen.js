@@ -3,6 +3,8 @@ import Button from "../atoms/Button";
 import paper from "../assets/icon-paper.svg";
 import scissor from "../assets/icon-scissors.svg";
 import rock from "../assets/icon-rock.svg";
+import lizard from "../assets/icon-lizard.svg";
+import spock from "../assets/icon-spock.svg";
 
 const MobileResultScreen = ({ usersChoice, computerChoice, userWinLose, gameReset }) => {
 	const result = userWinLose === "DRAW" ? <>{userWinLose}</> : <>{`YOU ${userWinLose}`}</>;
@@ -14,7 +16,9 @@ const MobileResultScreen = ({ usersChoice, computerChoice, userWinLose, gameRese
 			? scissor
 			: usersChoice === "rock"
 			? rock
-			: null;
+			: usersChoice === "lizard"
+			? lizard
+			: spock;
 
 	const computerIcon =
 		computerChoice === "paper"
@@ -23,7 +27,9 @@ const MobileResultScreen = ({ usersChoice, computerChoice, userWinLose, gameRese
 			? scissor
 			: computerChoice === "rock"
 			? rock
-			: null;
+			: usersChoice === "lizard"
+			? lizard
+			: spock;
 
 	return (
 		<div className="flex flex-col justify-center items-center mt-10 mb-14 w-full h-full">

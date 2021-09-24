@@ -7,7 +7,7 @@ const HomePage = () => {
 	const [hardMode] = useContext(toggleHardModeContext);
 
 	return (
-		<div className="font-body font-semibold bg-gradient-to-b from-primary-radial-gradient to-secondary-radial-gradient w-full h-full min-h-screen">
+		<div className="font-body font-semibold bg-gradient-to-b from-primary-radial-gradient to-secondary-radial-gradient w-full h-full min-h-screen lg:px-72">
 			{!hardMode ? <EasyMode /> : <AdvanceMode />}
 		</div>
 	);
