@@ -37,7 +37,7 @@ const MobileResultScreen = ({ usersChoice, computerChoice, userWinLose, gameRese
 				<Button src={userIcon} dataValue={usersChoice} />
 				<Button src={computerIcon} dataValue={computerChoice} />
 			</div>
-			<div className="flex justify-center items-center gap-16 text-base text-gray-200 pb-14">
+			<div className="flex justify-center items-center gap-14 text-base text-gray-200 pb-14">
 				<h1>YOU PICKED</h1>
 				<h1>THE HOUSE PICKED</h1>
 			</div>

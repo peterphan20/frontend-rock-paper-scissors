@@ -85,25 +85,25 @@ const EasyModeButtons = ({ score, setScore }) => {
 	return (
 		<div>
 			{!gamePlayed ? (
-				<div className="mt-16 mb-20">
+				<div className="relative">
 					<Triangle />
 					<Button
 						src={paper}
-						className="absolute top-52 left-8"
+						className="-top-10 -left-7 lg:-top-16 lg:-left-14"
 						dataValue="paper"
 						clickHandler={(e) => play(e)}
 						label="paper"
 					/>
 					<Button
 						src={scissor}
-						className="absolute top-52 left-56"
+						className="-top-10 left-40 lg:-top-16 lg:left-48"
 						dataValue="scissor"
 						clickHandler={(e) => play(e)}
 						label="scissor"
 					/>
 					<Button
 						src={rock}
-						className="absolute top-96 left-32"
+						className="top-32 left-16 lg:top-44 lg:left-20"
 						dataValue="rock"
 						clickHandler={(e) => play(e)}
 						label="rock"

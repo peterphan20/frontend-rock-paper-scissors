@@ -9,13 +9,13 @@ const AdvanceMode = () => {
 	const [score, setScore] = useState(0);
 
 	return (
-		<div className="relative flex flex-col justify-center items-center pt-5 px-5 m-auto w-full h-full">
+		<div className="flex flex-col justify-center items-center pt-5 px-5 m-auto w-full h-full">
 			{showAdvanceRules ? <Modal modalHandler={setShowAdvanceRules} /> : null}
 			<Scoreboard score={score} />
 			<ToggleMode />
 			<AdvanceModeButtons score={score} setScore={setScore} />
 			<button
-				className="text-gray-200 text-sm border-2 border-header-outline rounded-xl py-2 px-10 tracking-widest"
+				className="text-gray-200 text-sm border-2 border-header-outline rounded-xl py-2 px-10 mt-24 tracking-widest lg:text-lg lg:px-12 lg:mt-28"
 				onClick={() => setShowAdvanceRules(true)}
 			>
 				RULES

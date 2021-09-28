@@ -87,39 +87,39 @@ const AdvanceModeButtons = ({ score, setScore }) => {
 	return (
 		<div>
 			{!gamePlayed ? (
-				<div className="mt-20 mb-20">
+				<div className="relative">
 					<Pentagon />
 					<Button
 						src={scissor}
-						className="absolute top-60 left-36"
+						className="-top-20 left-16 lg:-top-24 lg:left-24"
 						dataValue="scissor"
 						clickHandler={(e) => play(e)}
 						label="scissor"
 					/>
 					<Button
 						src={paper}
-						className="absolute top-80 left-64"
+						className="top-10 left-44 lg:left-64"
 						dataValue="paper"
 						clickHandler={(e) => play(e)}
 						label="paper"
 					/>
 					<Button
 						src={rock}
-						className="absolute bottom-20 left-56"
+						className="top-48 left-36 lg:top-56 lg:left-56"
 						dataValue="rock"
 						clickHandler={(e) => play(e)}
 						label="rock"
 					/>
 					<Button
 						src={lizard}
-						className="absolute bottom-20 left-16"
+						className="top-48 left-0 lg:top-56 lg:-left-5"
 						dataValue="lizard"
 						clickHandler={(e) => play(e)}
 						label="lizard"
 					/>
 					<Button
 						src={spock}
-						className="absolute top-80 left-8"
+						className="top-10 -left-10 lg:-left-14"
 						dataValue="spock"
 						clickHandler={(e) => play(e)}
 						label="spock"
