@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../atoms/Button";
+import ResultsButton from "../atoms/ResultsButton";
 import paper from "../assets/icon-paper.svg";
 import scissor from "../assets/icon-scissors.svg";
 import rock from "../assets/icon-rock.svg";
@@ -34,8 +34,8 @@ const MobileResultScreen = ({ usersChoice, computerChoice, userWinLose, gameRese
 	return (
 		<div className="flex flex-col justify-center items-center mt-10 mb-14 w-full h-full">
 			<div className="flex justify-center items-center gap-14 pb-8">
-				<Button src={userIcon} dataValue={usersChoice} />
-				<Button src={computerIcon} dataValue={computerChoice} />
+				<ResultsButton src={userIcon} dataValue={usersChoice} />
+				<ResultsButton src={computerIcon} dataValue={computerChoice} />
 			</div>
 			<div className="flex justify-center items-center gap-14 text-base text-gray-200 pb-14">
 				<h1>YOU PICKED</h1>

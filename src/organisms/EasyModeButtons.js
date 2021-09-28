@@ -61,6 +61,7 @@ const EasyModeButtons = ({ score, setScore }) => {
 	};
 
 	const scoring = (usersChoice, computerChoice) => {
+		console.log(usersChoice, computerChoice);
 		if (draw(usersChoice, computerChoice)) {
 			setScore(score);
 			setUserWinLose("DRAW");
@@ -85,7 +86,7 @@ const EasyModeButtons = ({ score, setScore }) => {
 	return (
 		<div>
 			{!gamePlayed ? (
-				<div className="relative">
+				<div className="relative mb-14 lg:mb-24">
 					<Triangle />
 					<Button
 						src={paper}
