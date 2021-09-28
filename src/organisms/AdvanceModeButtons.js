@@ -49,6 +49,7 @@ const AdvanceModeButtons = ({ score, setScore }) => {
 			/>
 		);
 	};
+	
 	const computerPlay = () => {
 		const idx = Math.floor(Math.random() * advanceModeChoices.length);
 		setComputerChoice(advanceModeChoices[idx]);

@@ -32,7 +32,7 @@ const DesktopResultScreen = ({ usersChoice, computerChoice, userWinLose, gameRes
 			: spock;
 
 	return (
-		<div className="flex flex-col justify-center items-center w-full h-full">
+		<div className="flex flex-col justify-center items-center w-full h-full lg:mt-10 lg:mb-32">
 			<div className="flex justify-center items-center gap-96 text-base text-gray-200 pb-10 lg:text-2xl">
 				<h1>YOU PICKED</h1>
 				<h1>THE HOUSE PICKED</h1>

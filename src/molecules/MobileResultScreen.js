@@ -32,7 +32,7 @@ const MobileResultScreen = ({ usersChoice, computerChoice, userWinLose, gameRese
 			: spock;
 
 	return (
-		<div className="flex flex-col justify-center items-center mt-10 mb-14 w-full h-full">
+		<div className="flex flex-col justify-center items-center mt-10 w-full h-full">
 			<div className="flex justify-center items-center gap-14 pb-8">
 				<ResultsButton src={userIcon} dataValue={usersChoice} />
 				<ResultsButton src={computerIcon} dataValue={computerChoice} />

@@ -61,7 +61,6 @@ const EasyModeButtons = ({ score, setScore }) => {
 	};
 
 	const scoring = (usersChoice, computerChoice) => {
-		console.log(usersChoice, computerChoice);
 		if (draw(usersChoice, computerChoice)) {
 			setScore(score);
 			setUserWinLose("DRAW");

@@ -7,7 +7,7 @@ const AdvanceMode = () => {
 	const [score, setScore] = useState(0);
 
 	return (
-		<div className="flex flex-col justify-center items-center pt-5 px-5 m-auto w-full h-full">
+		<div className="flex flex-col justify-center items-center pt-5 px-5 mb-32 m-auto w-full h-full lg:mb-36">
 			<Scoreboard score={score} />
 			<ToggleMode />
 			<AdvanceModeButtons score={score} setScore={setScore} />

@@ -13,7 +13,7 @@ const HomePage = () => {
 			{!hardMode ? <EasyMode /> : <AdvanceMode />}
 			<div className="flex justify-center items-center w-full h-full lg:justify-end">
 				<button
-					className="text-gray-200 text-sm border-2 border-header-outline rounded-xl py-2 px-10 mt-28 tracking-widest lg:text-lg lg:px-12 lg:mt-40"
+					className="text-gray-200 text-sm border-2 border-header-outline rounded-xl py-2 px-10 tracking-widest lg:text-lg lg:px-12"
 					onClick={() => setShowRule(true)}
 				>
 					RULES
