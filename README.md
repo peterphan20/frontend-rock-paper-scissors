@@ -12,17 +12,13 @@ A simple rock paper scissors game located at [pephanrockpaperscissors.netlify.ap
 
 ## Installation
 
-Create project directory
-
-`mkdir <directory-name>`
-
-Enter your project directory
-
-`cd <directory-name>`
-
 Clone the repository
 
 `git clone https://github.com/peterphan20/frontend-rock-paper-scissors.git`
+
+Move into repository
+
+`cd frontend-rock-paper-scissors`
 
 Install dependencies
 
