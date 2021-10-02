@@ -97,9 +97,9 @@ const EasyModeButtons = ({ score, setScore }) => {
 					<Button
 						src={scissor}
 						className="-top-10 left-40 lg:-top-16 lg:left-48"
-						dataValue="scissor"
+						dataValue="scissors"
 						clickHandler={(e) => play(e)}
-						label="scissor"
+						label="scissors"
 					/>
 					<Button
 						src={rock}

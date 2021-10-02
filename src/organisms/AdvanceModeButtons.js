@@ -49,7 +49,7 @@ const AdvanceModeButtons = ({ score, setScore }) => {
 			/>
 		);
 	};
-	
+
 	const computerPlay = () => {
 		const idx = Math.floor(Math.random() * advanceModeChoices.length);
 		setComputerChoice(advanceModeChoices[idx]);
@@ -92,9 +92,9 @@ const AdvanceModeButtons = ({ score, setScore }) => {
 					<Button
 						src={scissor}
 						className="-top-20 left-16 lg:-top-24 lg:left-24"
-						dataValue="scissor"
+						dataValue="scissors"
 						clickHandler={(e) => play(e)}
-						label="scissor"
+						label="scissors"
 					/>
 					<Button
 						src={paper}
